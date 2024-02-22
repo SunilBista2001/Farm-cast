@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
-import { StarIcon } from "@chakra-ui/icons";
+import { StarIcon, SunIcon } from "@chakra-ui/icons";
 import { Avatar, Button } from "@chakra-ui/react";
 import Temperature from "../assets/temperature.png";
 import Humidity from "../assets/humidity.png";
@@ -86,8 +86,9 @@ export const PublicSection = () => {
             Order now and appreciate beauty of nature
           </p>
         </div>
+
         {/* About Images */}
-        <div className="flex flex-col my-12 sm:flex-row gap-4 sm:gap-8 md:gap-12">
+        <div className="flex flex-col my-12 sm:flex-row gap-4 sm:gap-8 md:gap-12 mb-28">
           <AboutImages
             title={"Temperature"}
             img={Temperature}
@@ -103,6 +104,33 @@ export const PublicSection = () => {
             img={Rain}
             description={"Plan irrigation wisely – Check rainfall."}
           />
+        </div>
+
+        {/* Why than others */}
+        <div className="flex md:flex-row flex-col justify-between max-sm:items-center max-sm:gap-12">
+          <div className="md:w-1/4 w-full flex flex-col gap-3">
+            <h1 className="text-3xl font-bold">
+              Why we are better than others ? 🤔
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              magnam incidunt voluptas?
+            </p>
+          </div>
+          <div className="flex md:flex-row flex-col max-sm:justify-center gap-8">
+            <div className="w-60 h-72 p-4 bg-white shadow-xl rounded-md flex flex-col justify-between items-center hover:scale-110 duration-300 ease-out cursor-pointer">
+              <SunIcon color={"teal"} width={100} height={100} />
+              <h1 className="text-2xl font-semibold">Lorem ipsum dolor sit.</h1>
+            </div>
+            <div className="w-60 h-72 p-4 mt-12 bg-white shadow-xl rounded-md flex flex-col justify-between items-center hover:scale-110 duration-300 ease-out cursor-pointer">
+              <SunIcon color={"teal"} width={100} height={100} />
+              <h1 className="text-2xl font-semibold">Lorem ipsum dolor sit.</h1>
+            </div>
+            <div className="w-60 h-72 p-4 bg-white shadow-xl rounded-md flex flex-col justify-between items-center hover:scale-110 duration-300 ease-out cursor-pointer">
+              <SunIcon color={"teal"} width={100} height={100} />
+              <h1 className="text-2xl font-semibold">Lorem ipsum dolor sit.</h1>
+            </div>
+          </div>
         </div>
       </div>
 
