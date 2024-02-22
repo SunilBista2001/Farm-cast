@@ -12,7 +12,7 @@ const FooterGroup = ({ title, t1, t2, t3 }) => {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col sm:flex-row sm:justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-6 h-48 bg-teal-50">
+    <div className="flex flex-col-reverse h-full gap-4 md:gap-0 sm:flex-row sm:justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-6 md:h-48 bg-teal-50">
       <div className="flex flex-col justify-between">
         <div className="space-y-0">
           <h1 className="font-semibold">Farm Cast</h1>
