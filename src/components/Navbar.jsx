@@ -1,5 +1,14 @@
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { Button } from "@chakra-ui/react";
+import {
+  Avatar,
+  Button,
+  Menu,
+  MenuButton,
+  MenuDivider,
+  MenuGroup,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -32,6 +41,19 @@ const Navbar = () => {
             Sign Up
           </Button>
         </Link>
+        <Menu>
+          <MenuButton>
+            <Avatar size={"sm"} bg="teal.500" cursor={"pointer"} />
+          </MenuButton>
+          <MenuList>
+            <MenuGroup title="Profile">
+              <MenuItem>Change Username</MenuItem>
+              <MenuItem>Change Password</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+            <MenuItem>Log Out</MenuItem>
+          </MenuList>
+        </Menu>
       </ul>
 
       {!open ? (
